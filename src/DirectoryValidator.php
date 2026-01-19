@@ -33,7 +33,7 @@ final class DirectoryValidator
         $this->mustBeNotEmptyValue();
 
         if (!is_dir($this->value)) {
-            throw DirectoryException::notFound($this->field, $this->value);
+            throw DirectoryException::notExist($this->field, $this->value);
         }
         return $this;
     }
