@@ -27,7 +27,6 @@ final class FileValidator
         return $this;
     }
 
-
     public function mustBeNotExist(): self
     {
         if (file_exists($this->value)) {
